@@ -60,6 +60,63 @@ namespace Group2
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            // Check if game has started and there's a current question
+            if (!gameStarted || question == null || answered) return;
+
+            // Disable the 50:50 button after use
+            pictureBox2.Enabled = false;
+            pictureBox2.Visible = false;
+
+            // Get the two remaining options (one correct, one random wrong)
+            string[] remainingOptions = GetFiftyFiftyOptions();
+
+            // Hide options that are NOT in the remaining options
+            HideNonRemainingOptions(remainingOptions);
+        }
+
+        private string[] GetFiftyFiftyOptions()
+        {
+            // Get the correct answer index and text
+            int correctIndex = question.Correct;
+            string correctAnswer = question.Options[correctIndex];
+
+            // Create a list of incorrect answer indices
+            List<int> incorrectIndices = new List<int>();
+            for (int i = 0; i < 4; i++)
+            {
+                if (i != correctIndex)
+                {
+                    incorrectIndices.Add(i);
+                }
+            }
+
+            // Randomly select one incorrect answer
+            Random random = new Random();
+            int randomIncorrectIndex = incorrectIndices[random.Next(incorrectIndices.Count)];
+            string randomIncorrectAnswer = question.Options[randomIncorrectIndex];
+
+            // Return the two options as array - for example: ["B", "D"]
+            return new string[] { correctAnswer, randomIncorrectAnswer };
+        }
+
+        private void HideNonRemainingOptions(string[] remainingOptions)
+        {
+            // Check each option and hide if it's not in the remaining options
+            if (!remainingOptions.Contains(Aoption.Text))
+                Aoption.Visible = false;
+
+            if (!remainingOptions.Contains(Boption.Text))
+                Boption.Visible = false;
+
+            if (!remainingOptions.Contains(Coption.Text))
+                Coption.Visible = false;
+
+            if (!remainingOptions.Contains(Doption.Text))
+                Doption.Visible = false;
+        }
+
+        private void panel14_Paint(object sender, PaintEventArgs e)
+        {
         }
 
         private void label50_Click(object sender, EventArgs e)
@@ -101,6 +158,18 @@ namespace Group2
                 Boption.FillColor = Color.DarkSlateGray;
                 Coption.FillColor = Color.DarkSlateGray;
                 Doption.FillColor = Color.DarkSlateGray;
+
+                // Make sure all options are visible when showing new question
+                Aoption.Visible = true;
+                Boption.Visible = true;
+                Coption.Visible = true;
+                Doption.Visible = true;
+
+                // Reset percentage labels
+                Aoption.Text = question.Options[0];
+                Boption.Text = question.Options[1];
+                Coption.Text = question.Options[2];
+                Doption.Text = question.Options[3];
             }
 
             question = questions.FirstOrDefault(q => q.Id == gameProgress);
@@ -195,6 +264,53 @@ namespace Group2
             }
 
             ShowNextQuestion();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            // Check if game has started and there's a current question
+            if (!gameStarted || question == null || answered) return;
+
+            // Disable the Ask the Audience button after use
+            pictureBox1.Enabled = false;
+            pictureBox1.Visible = false;
+
+            // Get audience results and display them on the answer buttons
+            ShowAudienceResultsOnButtons();
+        }
+
+        private void ShowAudienceResultsOnButtons()
+        {
+            int correctIndex = question.Correct;
+            Random random = new Random();
+
+            // Generate percentages that add up to 100%
+            int[] percentages = new int[4];
+            int total = 0;
+
+            // Give the correct answer a higher base percentage
+            for (int i = 0; i < 4; i++)
+            {
+                if (i == correctIndex)
+                {
+                    percentages[i] = random.Next(40, 71); // Correct answer gets 40-70%
+                }
+                else
+                {
+                    percentages[i] = random.Next(5, 31); // Wrong answers get 5-30%
+                }
+                total += percentages[i];
+            }
+
+            // Adjust to make sure total is 100%
+            int adjustment = 100 - total;
+            percentages[correctIndex] += adjustment;
+
+            // Update the button texts to show percentages
+            Aoption.Text = $"{question.Options[0]} - {percentages[0]}%";
+            Boption.Text = $"{question.Options[1]} - {percentages[1]}%";
+            Coption.Text = $"{question.Options[2]} - {percentages[2]}%";
+            Doption.Text = $"{question.Options[3]} - {percentages[3]}%";
         }
     }
 }
