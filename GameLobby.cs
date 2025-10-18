@@ -26,7 +26,7 @@ namespace Group2
         private void GameLobby_Load(object sender, EventArgs e)
         {
             // Automatically start the game when GameLobby opens
-            MessageBox.Show($"Loaded {questions.Count} questions");
+         
             gameStarted = true;
             ShowQuestion();
         }
