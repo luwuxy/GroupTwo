@@ -100,9 +100,9 @@
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PhoneFriend = new System.Windows.Forms.PictureBox();
+            this.LifeLine = new System.Windows.Forms.PictureBox();
+            this.AskAudience = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
@@ -138,9 +138,9 @@
             this.panel19.SuspendLayout();
             this.panel18.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PhoneFriend)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LifeLine)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AskAudience)).BeginInit();
             this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -154,6 +154,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.label33);
             this.panel5.Controls.Add(this.label34);
             this.panel5.Location = new System.Drawing.Point(18, 494);
@@ -173,7 +174,7 @@
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(67, 18);
             this.label33.TabIndex = 14;
-            this.label33.Text = "$ 7,500";
+            this.label33.Text = "$ 1,000";
             // 
             // label34
             // 
@@ -271,7 +272,7 @@
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(52, 18);
             this.label25.TabIndex = 14;
-            this.label25.Text = "$ 500";
+            this.label25.Text = "$ 100";
             // 
             // label26
             // 
@@ -289,6 +290,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label25);
             this.panel1.Controls.Add(this.label26);
             this.panel1.Location = new System.Drawing.Point(18, 593);
@@ -306,9 +308,9 @@
             this.label27.Location = new System.Drawing.Point(112, 4);
             this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(67, 18);
+            this.label27.Size = new System.Drawing.Size(52, 18);
             this.label27.TabIndex = 14;
-            this.label27.Text = "$ 1,000";
+            this.label27.Text = "$ 200";
             // 
             // label28
             // 
@@ -326,6 +328,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label27);
             this.panel2.Controls.Add(this.label28);
             this.panel2.Location = new System.Drawing.Point(18, 569);
@@ -343,9 +346,9 @@
             this.label29.Location = new System.Drawing.Point(112, 4);
             this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(67, 18);
+            this.label29.Size = new System.Drawing.Size(52, 18);
             this.label29.TabIndex = 14;
-            this.label29.Text = "$ 3,000";
+            this.label29.Text = "$ 300";
             // 
             // label30
             // 
@@ -363,6 +366,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label29);
             this.panel3.Controls.Add(this.label30);
             this.panel3.Location = new System.Drawing.Point(18, 545);
@@ -380,9 +384,9 @@
             this.label31.Location = new System.Drawing.Point(112, 4);
             this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(67, 18);
+            this.label31.Size = new System.Drawing.Size(52, 18);
             this.label31.TabIndex = 14;
-            this.label31.Text = "$ 5,000";
+            this.label31.Text = "$ 500";
             // 
             // label32
             // 
@@ -400,6 +404,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label31);
             this.panel4.Controls.Add(this.label32);
             this.panel4.Location = new System.Drawing.Point(18, 518);
@@ -464,11 +469,12 @@
             this.dQuestion.BackColor = System.Drawing.Color.Transparent;
             this.dQuestion.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dQuestion.ForeColor = System.Drawing.Color.White;
-            this.dQuestion.Location = new System.Drawing.Point(268, 455);
+            this.dQuestion.Location = new System.Drawing.Point(27, 458);
             this.dQuestion.Name = "dQuestion";
             this.dQuestion.Size = new System.Drawing.Size(222, 20);
             this.dQuestion.TabIndex = 21;
             this.dQuestion.Text = "This text is meant for Questions";
+            this.dQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Doption
             // 
@@ -739,13 +745,14 @@
             this.label35.Location = new System.Drawing.Point(112, 4);
             this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(77, 18);
+            this.label35.Size = new System.Drawing.Size(67, 18);
             this.label35.TabIndex = 14;
-            this.label35.Text = "$ 10,000";
+            this.label35.Text = "$ 2,000";
             // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Transparent;
+            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Controls.Add(this.label50);
             this.panel13.Controls.Add(this.label51);
             this.panel13.Location = new System.Drawing.Point(18, 302);
@@ -763,9 +770,9 @@
             this.label50.Location = new System.Drawing.Point(112, 4);
             this.label50.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(104, 18);
+            this.label50.Size = new System.Drawing.Size(77, 18);
             this.label50.TabIndex = 14;
-            this.label50.Text = "$ 1 MILLION";
+            this.label50.Text = "$ 75,000";
             // 
             // label51
             // 
@@ -789,13 +796,14 @@
             this.label52.Location = new System.Drawing.Point(112, 4);
             this.label52.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(104, 18);
+            this.label52.Size = new System.Drawing.Size(87, 18);
             this.label52.TabIndex = 14;
-            this.label52.Text = "$ 1 MILLION";
+            this.label52.Text = "$ 800,000";
             // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.Transparent;
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel14.Controls.Add(this.label52);
             this.panel14.Controls.Add(this.label53);
             this.panel14.Location = new System.Drawing.Point(18, 158);
@@ -826,9 +834,9 @@
             this.label54.Location = new System.Drawing.Point(112, 4);
             this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(104, 18);
+            this.label54.Size = new System.Drawing.Size(87, 18);
             this.label54.TabIndex = 14;
-            this.label54.Text = "$ 1 MILLION";
+            this.label54.Text = "$ 300,000";
             // 
             // label55
             // 
@@ -846,6 +854,7 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.Transparent;
+            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel15.Controls.Add(this.label54);
             this.panel15.Controls.Add(this.label55);
             this.panel15.Location = new System.Drawing.Point(18, 230);
@@ -883,6 +892,7 @@
             // panel20
             // 
             this.panel20.BackColor = System.Drawing.Color.Transparent;
+            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel20.Controls.Add(this.label64);
             this.panel20.Controls.Add(this.label65);
             this.panel20.Location = new System.Drawing.Point(18, 134);
@@ -900,9 +910,9 @@
             this.label60.Location = new System.Drawing.Point(112, 4);
             this.label60.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(104, 18);
+            this.label60.Size = new System.Drawing.Size(87, 18);
             this.label60.TabIndex = 14;
-            this.label60.Text = "$ 1 MILLION";
+            this.label60.Text = "$ 600,000";
             // 
             // label59
             // 
@@ -939,13 +949,14 @@
             this.label58.Location = new System.Drawing.Point(112, 4);
             this.label58.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(104, 18);
+            this.label58.Size = new System.Drawing.Size(87, 18);
             this.label58.TabIndex = 14;
-            this.label58.Text = "$ 1 MILLION";
+            this.label58.Text = "$ 125,000";
             // 
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.Color.Transparent;
+            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel17.Controls.Add(this.label58);
             this.panel17.Controls.Add(this.label59);
             this.panel17.Location = new System.Drawing.Point(18, 278);
@@ -963,9 +974,9 @@
             this.label56.Location = new System.Drawing.Point(112, 4);
             this.label56.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(104, 18);
+            this.label56.Size = new System.Drawing.Size(87, 18);
             this.label56.TabIndex = 14;
-            this.label56.Text = "$ 1 MILLION";
+            this.label56.Text = "$ 200,000";
             // 
             // label57
             // 
@@ -983,6 +994,7 @@
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.Transparent;
+            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel16.Controls.Add(this.label56);
             this.panel16.Controls.Add(this.label57);
             this.panel16.Location = new System.Drawing.Point(18, 254);
@@ -1000,9 +1012,9 @@
             this.label62.Location = new System.Drawing.Point(112, 4);
             this.label62.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(104, 18);
+            this.label62.Size = new System.Drawing.Size(87, 18);
             this.label62.TabIndex = 14;
-            this.label62.Text = "$ 1 MILLION";
+            this.label62.Text = "$ 400,000";
             // 
             // label63
             // 
@@ -1020,6 +1032,7 @@
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.Transparent;
+            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel19.Controls.Add(this.label62);
             this.panel19.Controls.Add(this.label63);
             this.panel19.Location = new System.Drawing.Point(18, 206);
@@ -1031,6 +1044,7 @@
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.Transparent;
+            this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel18.Controls.Add(this.label60);
             this.panel18.Controls.Add(this.label61);
             this.panel18.Location = new System.Drawing.Point(18, 182);
@@ -1042,9 +1056,9 @@
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Gold;
-            this.guna2ShadowPanel1.Controls.Add(this.pictureBox3);
-            this.guna2ShadowPanel1.Controls.Add(this.pictureBox2);
-            this.guna2ShadowPanel1.Controls.Add(this.pictureBox1);
+            this.guna2ShadowPanel1.Controls.Add(this.PhoneFriend);
+            this.guna2ShadowPanel1.Controls.Add(this.LifeLine);
+            this.guna2ShadowPanel1.Controls.Add(this.AskAudience);
             this.guna2ShadowPanel1.Controls.Add(this.panel19);
             this.guna2ShadowPanel1.Controls.Add(this.panel16);
             this.guna2ShadowPanel1.Controls.Add(this.panel17);
@@ -1097,46 +1111,50 @@
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(258, 640);
             this.guna2ShadowPanel1.TabIndex = 16;
             // 
-            // pictureBox3
+            // PhoneFriend
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(175, 25);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(65, 61);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 41;
-            this.pictureBox3.TabStop = false;
+            this.PhoneFriend.BackColor = System.Drawing.Color.Transparent;
+            this.PhoneFriend.Image = ((System.Drawing.Image)(resources.GetObject("PhoneFriend.Image")));
+            this.PhoneFriend.Location = new System.Drawing.Point(175, 25);
+            this.PhoneFriend.Margin = new System.Windows.Forms.Padding(2);
+            this.PhoneFriend.Name = "PhoneFriend";
+            this.PhoneFriend.Size = new System.Drawing.Size(65, 61);
+            this.PhoneFriend.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PhoneFriend.TabIndex = 41;
+            this.PhoneFriend.TabStop = false;
+            this.PhoneFriend.Click += new System.EventHandler(this.PhoneFriend_Click);
             // 
-            // pictureBox2
+            // LifeLine
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(98, 25);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(65, 61);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 40;
-            this.pictureBox2.TabStop = false;
+            this.LifeLine.BackColor = System.Drawing.Color.Transparent;
+            this.LifeLine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LifeLine.Image = ((System.Drawing.Image)(resources.GetObject("LifeLine.Image")));
+            this.LifeLine.Location = new System.Drawing.Point(98, 25);
+            this.LifeLine.Margin = new System.Windows.Forms.Padding(2);
+            this.LifeLine.Name = "LifeLine";
+            this.LifeLine.Size = new System.Drawing.Size(65, 61);
+            this.LifeLine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LifeLine.TabIndex = 40;
+            this.LifeLine.TabStop = false;
+            this.LifeLine.Click += new System.EventHandler(this.LifeLine_Click);
             // 
-            // pictureBox1
+            // AskAudience
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(18, 25);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 61);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 39;
-            this.pictureBox1.TabStop = false;
+            this.AskAudience.BackColor = System.Drawing.Color.Transparent;
+            this.AskAudience.Image = ((System.Drawing.Image)(resources.GetObject("AskAudience.Image")));
+            this.AskAudience.Location = new System.Drawing.Point(18, 25);
+            this.AskAudience.Margin = new System.Windows.Forms.Padding(2);
+            this.AskAudience.Name = "AskAudience";
+            this.AskAudience.Size = new System.Drawing.Size(65, 61);
+            this.AskAudience.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AskAudience.TabIndex = 39;
+            this.AskAudience.TabStop = false;
+            this.AskAudience.Click += new System.EventHandler(this.AskAudience_Click);
             // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.Transparent;
+            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.label47);
             this.panel12.Controls.Add(this.label48);
             this.panel12.Location = new System.Drawing.Point(18, 326);
@@ -1154,9 +1172,9 @@
             this.label47.Location = new System.Drawing.Point(112, 4);
             this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(104, 18);
+            this.label47.Size = new System.Drawing.Size(77, 18);
             this.label47.TabIndex = 14;
-            this.label47.Text = "$ 1 MILLION";
+            this.label47.Text = "$ 40,000";
             // 
             // label48
             // 
@@ -1174,6 +1192,7 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Transparent;
+            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.label45);
             this.panel11.Controls.Add(this.label46);
             this.panel11.Location = new System.Drawing.Point(18, 350);
@@ -1191,9 +1210,9 @@
             this.label45.Location = new System.Drawing.Point(112, 4);
             this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(87, 18);
+            this.label45.Size = new System.Drawing.Size(77, 18);
             this.label45.TabIndex = 14;
-            this.label45.Text = "$ 500,000";
+            this.label45.Text = "$ 20,000";
             // 
             // label46
             // 
@@ -1211,6 +1230,7 @@
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.Transparent;
+            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.label43);
             this.panel10.Controls.Add(this.label44);
             this.panel10.Location = new System.Drawing.Point(18, 374);
@@ -1228,9 +1248,9 @@
             this.label43.Location = new System.Drawing.Point(112, 4);
             this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(87, 18);
+            this.label43.Size = new System.Drawing.Size(77, 18);
             this.label43.TabIndex = 14;
-            this.label43.Text = "$ 100,000";
+            this.label43.Text = "$ 10,000";
             // 
             // label44
             // 
@@ -1248,6 +1268,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Transparent;
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.label41);
             this.panel9.Controls.Add(this.label42);
             this.panel9.Location = new System.Drawing.Point(18, 398);
@@ -1265,9 +1286,9 @@
             this.label41.Location = new System.Drawing.Point(112, 4);
             this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(77, 18);
+            this.label41.Size = new System.Drawing.Size(67, 18);
             this.label41.TabIndex = 14;
-            this.label41.Text = "$ 60,000";
+            this.label41.Text = "$ 7,000";
             // 
             // label42
             // 
@@ -1285,6 +1306,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.label39);
             this.panel8.Controls.Add(this.label40);
             this.panel8.Location = new System.Drawing.Point(18, 422);
@@ -1302,9 +1324,9 @@
             this.label39.Location = new System.Drawing.Point(112, 4);
             this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(77, 18);
+            this.label39.Size = new System.Drawing.Size(67, 18);
             this.label39.TabIndex = 14;
-            this.label39.Text = "$ 30,000";
+            this.label39.Text = "$ 5,000";
             // 
             // label40
             // 
@@ -1322,6 +1344,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Transparent;
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.label37);
             this.panel7.Controls.Add(this.label38);
             this.panel7.Location = new System.Drawing.Point(18, 446);
@@ -1339,9 +1362,9 @@
             this.label37.Location = new System.Drawing.Point(112, 4);
             this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(77, 18);
+            this.label37.Size = new System.Drawing.Size(67, 18);
             this.label37.TabIndex = 14;
-            this.label37.Text = "$ 15,000";
+            this.label37.Text = "$ 3,000";
             // 
             // label38
             // 
@@ -1359,6 +1382,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.label35);
             this.panel6.Controls.Add(this.label36);
             this.panel6.Location = new System.Drawing.Point(18, 470);
@@ -1437,9 +1461,9 @@
             this.panel18.PerformLayout();
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PhoneFriend)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LifeLine)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AskAudience)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel11.ResumeLayout(false);
@@ -1553,9 +1577,9 @@
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PhoneFriend;
+        private System.Windows.Forms.PictureBox LifeLine;
+        private System.Windows.Forms.PictureBox AskAudience;
         private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
