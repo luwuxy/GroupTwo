@@ -1,0 +1,74 @@
+[
+  {
+    "Id": 1,
+    "Question": "What is the capital of the Philippines?",
+    "Options": [ "A) Davao", "B) Manila", "C) Cebu", "D) Baguio" ],
+    "Correct": 1
+  },
+  {
+    "Id": 2,
+    "Question": "Which planet is known as the 'Red Planet'?",
+    "Options": [ "A) Mars", "B) Venus", "C) Jupiter", "D) Mercury" ],
+    "Correct": 0
+  },
+  {
+    "Id": 3,
+    "Question": "What is the chemical symbol for water?",
+    "Options": [ "A) H2O", "B) O2", "C) CO2", "D) HO" ],
+    "Correct": 0
+  },
+  {
+    "Id": 4,
+    "Question": "Who painted the 'Mona Lisa'?",
+    "Options": [ "A) Vincent van Gogh", "B) Pablo Picasso", "C) Leonardo da Vinci", "D) Michelangelo" ],
+    "Correct": 2
+  },
+  {
+    "Id": 5,
+    "Question": "What year did World War II end?",
+    "Options": [ "A) 1939", "B) 1945", "C) 1950", "D) 1961" ],
+    "Correct": 1
+  },
+  {
+    "Id": 6,
+    "Question": "In computing, what does 'CPU' stand for?",
+    "Options": [ "A) Central Process Unit", "B) Central Processing Unit", "C) Computer Personal Unit", "D) Core Programming Utility" ],
+    "Correct": 1
+  },
+  {
+    "Id": 7,
+    "Question": "What is the smallest prime number?",
+    "Options": [ "A) 0", "B) 1", "C) 2", "D) 3" ],
+    "Correct": 2
+  },
+  {
+    "Id": 8,
+    "Question": "Which country is known as the 'Land of the Rising Sun?'",
+    "Options": [ "A) China", "B) South Korea", "C) Japan", "D) Thailand" ],
+    "Correct": 2
+  },
+  {
+    "Id": 9,
+    "Question": "What is the longest river in the world?",
+    "Options": [ "A) Amazon River", "B) Nile River", "C) Yangtze River", "D) Mississippi River" ],
+    "Correct": 1
+  },
+  {
+    "Id": 10,
+    "Question": "Who was the first man to step on the moon?",
+    "Options": [ "A) Yuri Gagarin", "B) Michael Collins", "C) Buzz Aldrin", "D) Neil Armstrong" ],
+    "Correct": 3
+  },
+  {
+    "Id": 11,
+    "Question": "Which element has the atomic number 79?",
+    "Options": [ "A) Gold", "B) Silver", "C) Platinum", "D) Copper" ],
+    "Correct": 0
+  },
+  {
+    "Id": 12,
+    "Question": "Who was the Greek goddess of wisdom?",
+    "Options": [ "A) Aphrodite", "B) Hera", "C) Athena", "D) Artemis" ],
+    "Correct": 2
+  }
+]

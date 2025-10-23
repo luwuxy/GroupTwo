@@ -63,6 +63,17 @@ namespace Group2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HD_wallpaper_play_who_wants_to_be_a_millionaire_casino_game_online_for_real_for_your_mobile_tablet_explore_millionaire_background {
+            get {
+                object obj = ResourceManager.GetObject("HD-wallpaper-play-who-wants-to-be-a-millionaire-casino-game-online-for-real-for-y" +
+                        "our-mobile-tablet-explore-millionaire-background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BGWMM {
             get {
                 object obj = ResourceManager.GetObject("BGWMM", resourceCulture);
