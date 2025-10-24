@@ -1548,7 +1548,6 @@
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Panel panel16;
@@ -1581,5 +1580,6 @@
         private System.Windows.Forms.PictureBox LifeLine;
         private System.Windows.Forms.PictureBox AskAudience;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel17;
     }
 }

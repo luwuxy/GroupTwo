@@ -23,11 +23,14 @@ namespace Group2
         QuestionObject question;
         bool answered = false;
         Random random = new Random();
+        bool gameEnded = false;
 
         public GameLobby()
         {
             InitializeComponent();
             LoadQuestions();
+
+            this.FormClosed += StartGame_FormClosed;
         }
 
         private void GameLobby_Load(object sender, EventArgs e)
@@ -39,13 +42,21 @@ namespace Group2
             {
                 panel1, panel2, panel3, panel4, panel5,
                 panel6, panel7, panel8, panel9, panel10,
-                panel11, panel12, panel13, panel14, panel15,
-                panel16, panel17, panel18, panel19, panel20
+                panel11, panel12, panel13, panel17, panel16,
+                panel15, panel19, panel18, panel14, panel20
             };
 
             ResetPrizePanels();
             HighlightCurrentPanel(); // highlight panel 1 when game starts
             ShowQuestion();
+        }
+
+        private void StartGame_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (!gameEnded)
+            {
+                Application.OpenForms["StartGame"]?.Close();
+            }
         }
 
         // ===============================
@@ -122,7 +133,7 @@ namespace Group2
             Coption.Visible = true;
             Doption.Visible = true;
 
-            if (gameProgress > questions.Count)
+            if (gameProgress > 20)
             {
                 EndGame(true);
                 return;
@@ -198,8 +209,9 @@ namespace Group2
             answered = false;
 
             // Return to StartGame
-            StartGame startForm = new StartGame();
-            startForm.Show();
+            gameEnded = true;
+            Application.OpenForms["StartGame"].Show();
+            Application.OpenForms["StartGame"].Opacity = 1;
             this.Close();
         }
 
